@@ -1,61 +1,82 @@
-# GaBus - Bus Booking & Management System
+# 🚌 **GaBus**  
+### *An Online Booking and Reservation System*
 
-GaBus is a comprehensive, real-time bus booking and management application built with Flutter and Firebase. It provides a seamless experience for three distinct user roles: Passengers, Bus Drivers, and Administrators. Passengers can book seats from terminals or while on the road, track buses in real-time, and manage their bookings. Drivers can manage their routes, status, and view earnings. Admins have a full overview of the system, including earnings, bus tracking, and user verification.
+GaBus is an intelligent, real-time bus booking and management platform built with **Flutter** and **Firebase**. Designed to enhance the public transport experience, GaBus supports three unique user roles: **Passengers**, **Drivers**, and **Administrators**.
 
-## Table of Contents
-- [About The Project](#about-the-project)
-- [Key Features](#key-features)
-  - [Passenger Features](#passenger-features)
-  - [Driver Features](#driver-features)
-  - [Admin Features](#admin-features)
-- [Technology Stack](#technology-stack)
+From booking a seat on the go to tracking earnings and verifying users, GaBus offers a seamless and powerful toolset for everyone involved in bus transit.
 
-## About The Project
+---
 
-The GaBus project aims to modernize the public bus transportation experience by providing a centralized platform for booking, tracking, and management. It addresses the common challenges faced by commuters, such as uncertainty in bus schedules, difficulty in securing seats, and lack of real-time information.
+## 📖 Table of Contents
+- [📌 About the Project](#-about-the-project)
+- [✨ Key Features](#-key-features)  
+  - [👤 Passenger Features](#passenger-features)  
+  - [🧑‍✈️ Driver Features](#driver-features)  
+  - [🛠️ Admin Features](#admin-features)
+- [🧱 Technology Stack](#-technology-stack)
 
--   **For Passengers:** A user-friendly mobile app to find buses, book seats in advance from a terminal or book available seats on a nearby bus, pay securely through a built-in wallet, and track the bus's location live.
--   **For Bus Drivers:** A dedicated interface to manage their operational status (e.g., on-duty for a specific route, logged off), view seat occupancy in real-time, handle walk-in passengers, and track their earnings per trip and daily.
--   **For Administrators:** A powerful dashboard to oversee the entire operation. This includes registering new buses, verifying user identities for discounts, monitoring the real-time location of all active buses, and analyzing system-wide earnings reports.
+---
 
-## Key Features
+## 📌 About the Project
 
-### Passenger Features
--   **User Authentication:** Secure registration, login, and password management.
--   **Real-time Bus Tracking:** View the live location of active buses on a map.
--   **Flexible Booking:**
-    -   **Terminal Booking:** Book seats for scheduled trips from a terminal.
-    -   **On-the-Road Booking:** Find nearby buses and book available seats.
--   **Interactive Seat Selection:** A visual seat map to choose and book preferred seats.
--   **Wallet System:** A secure in-app wallet for cashless payments.
--   **Profile & Verification:** Manage user profiles and submit documents for verification to avail discounts (e.g., for students, seniors).
--   **Booking History:** View past and upcoming trip details and receipts.
+> *“Revolutionizing the way people experience public transport.”*
 
-### Driver Features
--   **Driver Authentication:** Secure login for authorized bus drivers.
--   **Status Management:** Set the bus's current status (e.g., `CSBT to Bato`, `Logged Off`).
--   **Live Location Broadcasting:** Transmit the bus's real-time GPS location.
--   **Seat Management Interface:** View the real-time status of all seats (available, reserved, occupied) and manage bookings for walk-in passengers.
--   **Earnings Dashboard:** Track earnings on a per-trip and daily basis.
+GaBus was developed to solve recurring issues in public transit: inconsistent schedules, lack of seat availability, and poor visibility into real-time bus locations. This centralized system allows:
 
-### Admin Features
--   **Admin Authentication:** Secure login for administrators.
--   **System-wide Earnings Dashboard:** View and analyze total earnings on a per-trip, daily, and monthly basis.
--   **Live Bus Fleet Tracking:** A master map view showing the real-time location of all buses currently on the road.
--   **User Verification Portal:** Review and approve/reject user verification requests for discounts.
--   **Bus Registration:** Add new buses and their schedules to the system.
+- 🔹 **Passengers** to discover buses, book seats (even while on the road!), pay via a built-in wallet, and track routes live.
+- 🔹 **Drivers** to manage their availability, view occupancy in real time, accept walk-in passengers, and monitor their earnings.
+- 🔹 **Admins** to register new buses, monitor fleet performance, verify users for discounts, and get full visibility into system-wide earnings.
 
-## Technology Stack
+---
 
--   **Framework:** Flutter
--   **Programming Language:** Dart
--   **Backend & Database:** Firebase
-    -   **Authentication:** For user, driver, and admin sign-in.
-    -   **Cloud Firestore:** For storing persistent data like user profiles, bus details, and transactions.
-    -   **Realtime Database:** For live data synchronization, including bus locations and seat statuses.
-    -   **Firebase Storage:** For storing user-uploaded verification images.
--   **State Management:** Provider
--   **Mapping & Geolocation:**
-    -   **Google Maps Flutter:** For displaying maps and routes.
-    -   **Geolocator:** For accessing device GPS.
-    -   **Permission Handler:** For managing location permissions.
+## ✨ Key Features
+
+### 👤 Passenger Features
+- 🔐 **Secure Login & Registration**
+- 🗺️ **Live Bus Tracking** – See nearby buses in real time.
+- 🧾 **Booking Options**:
+  - **Terminal Booking** – Reserve seats ahead of time.
+  - **On-the-Road Booking** – Catch available buses near your current location.
+- 🎯 **Interactive Seat Selection** – Tap to select your preferred seat.
+- 💳 **In-App Wallet** – Cashless, secure, and simple.
+- 🪪 **Profile Management & ID Verification** – Upload documents for special fare eligibility.
+- 📅 **Trip History** – View past and upcoming rides.
+
+---
+
+### 🧑‍✈️ Driver Features
+- 🔐 **Driver Authentication**
+- 🕹️ **Status Control** – Go live on a specific route or log off.
+- 📍 **GPS Broadcasting** – Share real-time location with the system.
+- 🪑 **Seat Dashboard** – Track bookings (online & walk-ins) at a glance.
+- 💰 **Earnings View** – See daily and trip-specific income stats.
+
+---
+
+### 🛠️ Admin Features
+- 🔐 **Admin Authentication**
+- 📊 **Earnings Dashboard** – Monitor revenue by trip, day, or month.
+- 🗺️ **Fleet Tracking** – View all live buses on a central map.
+- ✅ **User Verification Portal** – Approve or reject ID submissions.
+- 🚌 **Bus & Schedule Management** – Register new buses and manage operations.
+
+---
+
+## 🧱 Technology Stack
+
+| Layer           | Technology Used                      |
+|------------------|---------------------------------------|
+| **Frontend**     | Flutter (Dart)                        |
+| **Backend**      | Firebase                              |
+|                  | - Firebase Authentication             |
+|                  | - Cloud Firestore                     |
+|                  | - Realtime Database                   |
+|                  | - Firebase Storage                    |
+| **State Mgmt**   | Provider                              |
+| **Maps & Location** | Google Maps, Geolocator, Permission Handler |
+
+---
+
+## 🚀 Ready to Transform Commuting?
+
+Whether you're a commuter, a bus driver, or managing a whole fleet—**GaBus** brings simplicity, transparency, and efficiency to every journey.
